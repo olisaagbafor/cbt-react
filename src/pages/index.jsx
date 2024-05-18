@@ -1,0 +1,13 @@
+export * as Exams from "./Exams/Exams";
+export * as ExamPage from "./Exampage/ExamPage";
+export * as Instruction from "./Instruction/Instruction";
+export * as Login from "./Login";
+export * as Results from "./Results/Results";
+export * as Layout from "./Layout/Layout";
+export * as Review from "./Review/Review";
+export * as ChangePassword from "./ChangePassword/ChangePassword";
+export * as Home from "./home/Home";
+export * as ExamPagePerQuestion from "./Exampage/ExamPagePerQuestion";
+export * as History from "./History";
+export * as Register from "./Register";
+export * as LoginNoCode from "./LoginNoCode";

@@ -1,0 +1,40 @@
+var _path, _path2;
+
+var _excluded = ["title", "titleId"];
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+import * as React from "react";
+
+function SvgSms(_ref, svgRef) {
+  var title = _ref.title,
+      titleId = _ref.titleId,
+      props = _objectWithoutProperties(_ref, _excluded);
+
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 20,
+    height: 21,
+    viewBox: "0 0 20 21",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    opacity: 0.2,
+    d: "M14.1666 17.3058H5.83329C3.33329 17.3058 1.66663 16.0558 1.66663 13.1392V7.30583C1.66663 4.38916 3.33329 3.13916 5.83329 3.13916H14.1666C16.6666 3.13916 18.3333 4.38916 18.3333 7.30583V13.1392C18.3333 16.0558 16.6666 17.3058 14.1666 17.3058Z",
+    fill: "#484848"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M9.99998 10.9474C9.29998 10.9474 8.59165 10.7307 8.04998 10.2891L5.44164 8.20572C5.17498 7.98906 5.12498 7.59739 5.34165 7.33072C5.55831 7.06405 5.94998 7.01406 6.21665 7.23072L8.82497 9.31406C9.45831 9.82239 10.5333 9.82239 11.1666 9.31406L13.775 7.23072C14.0416 7.01406 14.4416 7.05572 14.65 7.33072C14.8666 7.59739 14.825 7.99739 14.55 8.20572L11.9416 10.2891C11.4083 10.7307 10.7 10.9474 9.99998 10.9474Z",
+    fill: "#484848"
+  })));
+}
+
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgSms);
+export default __webpack_public_path__ + "static/media/sms.e2ebdef77a9d4def1c720ca91d4fe6f8.svg";
+export { ForwardRef as ReactComponent };

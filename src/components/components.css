@@ -1,0 +1,109 @@
+@import url(./../assets/theme.css);
+
+.pr-container {
+	background: var(--white);
+	border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	gap: 20px;
+}
+
+.pr-details-container {
+	flex: 1;
+}
+
+.pr-img {
+	object-fit: contain;
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+}
+
+.pr-detail-title {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 29px;
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+	color: var(--primary);
+}
+
+.pr-content-wrp {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 40px;
+}
+
+.pr-header-text {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.8rem;
+	color: var(--black);
+	margin: 0 0 5px;
+}
+
+.pr-header-sub {
+	margin-left: 10px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 29px;
+	color: var(--black);
+}
+
+.ml-1 {
+	margin-left: -150px;
+}
+
+.review-cell {
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: white;
+	padding-left: 30px !important;
+}
+
+.review-cell:hover {
+	cursor: pointer;
+}
+
+.review-cell.answered {
+	background-color: white;
+	color: black;
+}
+
+.review-cell.answered::before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: green;
+	width: 17px;
+	border-radius: 10px 0 0 10px;
+}
+
+.review-cell::before {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: grey;
+	width: 17px;
+	border-radius: 10px 0 0 10px;
+}
+
+.review-cell p {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.8rem;
+	margin: 0;
+}

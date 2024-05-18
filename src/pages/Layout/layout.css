@@ -1,0 +1,54 @@
+@import url(../../assets/theme.css);
+body {
+	background: var(--background);
+	padding: 50px;
+}
+.layouts-container {
+	margin-top: 70px;
+}
+
+.layout-table {
+	border-collapse: separate;
+	border-spacing: 0 20px;
+}
+.layout-tb-container {
+	margin-top: 40px;
+}
+.layout-thead {
+	background: var(--secondary);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 20px;
+	width: 100%;
+	color: var(--primary);
+}
+.layout-thead .layout-thead-tr th {
+	vertical-align: middle;
+	height: 50px;
+	padding: 15px 45px;
+}
+.layout-tbody {
+	background-color: var(--white);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 20px;
+	color: var(--darker-gray);
+}
+.layout-tbody-tr td {
+	padding: 15px 45px;
+	vertical-align: middle;
+}
+.layout-btn {
+	color: var(--primary);
+}
+.layout-btn:hover {
+	color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+	.layouts-container {
+		margin-top: 20px;
+	}
+}

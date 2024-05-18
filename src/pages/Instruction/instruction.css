@@ -1,0 +1,79 @@
+@import url(../../assets/theme.css);
+body {
+	background: var(--background);
+	padding: 50px;
+}
+.details-container {
+	margin-top: 70px;
+}
+.instructions-container {
+	background: var(--white);
+	border-radius: 20px;
+	margin-top: 30px;
+	min-height: 200px;
+	padding: 40px 60px 60px 60px;
+}
+.header-text {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 29px;
+	letter-spacing: 3px;
+	color: var(--primary);
+}
+.header-content-text {
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 29px;
+	color: var(--black);
+}
+.header-text-sub {
+	margin-left: 10px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 29px;
+	color: var(--black);
+}
+.start {
+	width: 150px;
+	height: 48px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 28px;
+	border-radius: 8px;
+	margin: 30px 0;
+	float: right;
+	border: none;
+	color: var(--white);
+	background: var(--primary);
+}
+.instruction p {
+	margin-left: 10px;
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.8rem;
+	line-height: 29px;
+	color: var(--black);
+}
+
+.bold-text {
+	font-weight: 700;
+}
+
+.red-text {
+	color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+	.instructions-container {
+		padding: 20px;
+	}
+}
