@@ -6,21 +6,7 @@ import { ThemeProvider } from "styled-components";
 
 import { BrowserRouter as Router, Navigate, Outlet, Route, Routes } from "react-router-dom";
 
-import {
-  Exams,
-  ExamPage,
-  Instruction,
-  Login,
-  Results,
-  Layout,
-  Review,
-  ChangePassword,
-  Home,
-  ExamPagePerQuestion,
-  History,
-  Register,
-  LoginNoCode,
-} from "./pages";
+import { Exams, ExamPage, Instruction, Login, Results, Layout, Review, ChangePassword, Home, ExamPagePerQuestion, History, Register } from "./pages";
 import { decryptData, getFromStorage } from "./assets";
 import { MathJaxContext } from "better-react-mathjax";
 
