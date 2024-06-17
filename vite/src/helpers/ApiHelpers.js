@@ -11,7 +11,7 @@ const options = {
 const makePostAPICall = (endpoint, data, successCallback, failedCallback) => {
   axios({
     method: "POST",
-    url: `${process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL_BASEURL : process.env.REACT_APP_PROD_BASEURL}/${endpoint}`,
+    url: `${import.meta.env.NODE_ENV === "development" ? import.meta.env.REACT_APP_LOCAL_BASEURL : import.meta.env.REACT_APP_PROD_BASEURL}/${endpoint}`,
     data: serialize({ school_code: getFromStorage("school_code"), ...data }, options),
     headers: {
       "Content-Type": "multipart/form-data",
@@ -39,7 +39,7 @@ const makePostAPICall = (endpoint, data, successCallback, failedCallback) => {
 const makeGetAPICall = (endpoint, params, successCallback, failedCallback) => {
   axios({
     method: "GET",
-    url: `${process.env.NODE_ENV === "development" ? process.env.REACT_APP_LOCAL_BASEURL : process.env.REACT_APP_PROD_BASEURL}/${endpoint}`,
+    url: `${import.meta.env.NODE_ENV === "development" ? import.meta.env.REACT_APP_LOCAL_BASEURL : import.meta.env.REACT_APP_PROD_BASEURL}/${endpoint}`,
     params: { school_code: getFromStorage("school_code"), ...params },
     headers: {
       "X-Authorization": getFromStorage("studentToken"),
