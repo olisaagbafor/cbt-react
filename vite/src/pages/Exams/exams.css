@@ -1,0 +1,62 @@
+@import url(../../assets/theme.css);
+body {
+	background: var(--background);
+	padding: 50px 0;
+}
+.exams-container {
+	margin-top: 40px;
+}
+
+.exam-table {
+	border-collapse: separate;
+	border-spacing: 0 20px;
+}
+.exam-tb-container {
+	margin-top: 40px;
+}
+.exam-thead {
+	background: var(--secondary);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.6rem;
+	line-height: 20px;
+	width: 100%;
+	color: var(--primary);
+}
+.exam-thead .exam-thead-tr th {
+	vertical-align: middle;
+	height: 50px;
+	padding: 15px 45px;
+}
+.exam-tbody {
+	background-color: var(--white);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 20px;
+	color: var(--darker-gray);
+}
+.exam-tbody-tr td {
+	padding: 15px 45px;
+	vertical-align: middle;
+	width: max-content;
+}
+.exam-btn {
+	color: var(--primary);
+}
+.exam-btn:hover {
+	color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+	.exam-thead .exam-thead-tr th {
+		vertical-align: middle;
+		height: 50px;
+		padding: 15px 10px;
+	}
+
+	.exam-tbody-tr td {
+		padding: 15px 10px;
+		vertical-align: middle;
+	}
+}

@@ -1,0 +1,13 @@
+export { default as Exams } from "./Exams/Exams";
+export { default as ExamPage } from "./Exampage/ExamPage";
+export { default as Instruction } from "./Instruction/Instruction";
+export { default as Login } from "./Login";
+export { default as Results } from "./Results/Results";
+export { default as Layout } from "./Layout/Layout";
+export { default as Review } from "./Review/Review";
+export { default as ChangePassword } from "./ChangePassword/ChangePassword";
+export { default as Home } from "./home/Home";
+export { default as ExamPagePerQuestion } from "./Exampage/ExamPagePerQuestion";
+export { default as History } from "./History";
+export { default as Register } from "./Register";
+export { default as LoginNoCode } from "./LoginNoCode";
